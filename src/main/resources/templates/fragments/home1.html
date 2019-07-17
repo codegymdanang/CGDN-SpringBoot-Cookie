@@ -11,12 +11,18 @@
     <li class="breadcrumb-item">Page 1</li>
 </th:block>
 <div layout:fragment="page_content" id="page_content">
-    <h3>Page 1</h3>
+    <h3>Result</h3>
 
-    <div class="alert alert-info" style="display: none;" id="js-content">
-    </div>
+    <p th:text="${cookieValue}"> </p>
+
     <a th:href="@{/test2}">Go to page 2</a>
+
+
 </div>
+
+
+
+
 <th:block layout:fragment="scripts">
     <script type="text/javascript">
         $(function(){
